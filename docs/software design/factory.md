@@ -1,1 +1,3 @@
 # Factory Pattern
+
+The factory pattern is used when...
