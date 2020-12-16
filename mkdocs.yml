@@ -8,10 +8,17 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - footnotes
+  - attr_list
+  - tables
 extra_javascript:
   - javascripts/config.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+extra_css:
+  - css/custom-elements.css
+  - css/material-colors.css
+  - css/material-shadows.css
+  - css/material-components.css
 nav:
   - Home: 'index.md'
   - About: 'about.md'
