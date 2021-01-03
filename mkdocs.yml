@@ -10,6 +10,7 @@ markdown_extensions:
   - footnotes
   - attr_list
   - tables
+  # - grid_tables
   - pymdownx.highlight
       # linenums: true
       # linenums_style: pymdownx.inline
@@ -32,9 +33,22 @@ nav:
       - Factory: 'software design/factory.md'
     - Algorithms Lab:
       - Prefix Sum and Precomputation: 'Algorithms Lab/prefix_sum_and_precomputation.md'
+      - Sliding Window: 'Algorithms Lab/sliding_window.md'
+      - Dynamic Programming: 'Algorithms Lab/dynamic_programming.md'
+      - 'Numbers: Representation and Computation (CGAL)': 'Algorithms Lab/numbers_and_computation.md'
+      - Geometric Computing: 'Algorithms Lab/geometric_computing.md'
       - Exercises:
         - week 1: 'Algorithms Lab/exercises/w01.md'
+        - week 2: 'Algorithms Lab/exercises/w02.md'
+        - week 3: 'Algorithms Lab/exercises/w03.md'
+      - Problems of the week: 'Algorithms Lab/pows/pows.md'
   - Notes:
     - Flutter:
       - Setup: 'notes/flutter/02_setup.md'
+      - I am rich: 'notes/flutter/03_app_from_scratch.md'
+      - MiCard: 'notes/flutter/06_MiCard.md'
+      - Dicee - Building Apps with State: 'notes/flutter/07_dicee.md'
+      - Xylophone - Using Flutter and Dart Packages: 'notes/flutter/09_xylophone.md'
+      - Quizzler - Modularising & Organizing Flutter Code: 'notes/flutter/10_quizzler.md'
+      - BMI Calculator - Building Flutter UIs for Intermediates: 'notes/flutter/12_bmi.md'
   # - Home: /docs/index.md
