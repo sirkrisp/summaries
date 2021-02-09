@@ -37,10 +37,17 @@ nav:
       - Dynamic Programming: 'Algorithms Lab/dynamic_programming.md'
       - 'Numbers: Representation and Computation (CGAL)': 'Algorithms Lab/numbers_and_computation.md'
       - Geometric Computing: 'Algorithms Lab/geometric_computing.md'
+      - Boost Graph Library: 'Algorithms Lab/boost_graph_library.md'
+      - Greedy Algorithms: 'Algorithms Lab/greedy.md'
+      - Proximity Structures: 'Algorithms Lab/proximity_structures.md'
       - Exercises:
         - week 1: 'Algorithms Lab/exercises/w01.md'
         - week 2: 'Algorithms Lab/exercises/w02.md'
         - week 3: 'Algorithms Lab/exercises/w03.md'
+        - week 4: 'Algorithms Lab/exercises/w04.md'
+        - week 5: 'Algorithms Lab/exercises/w05.md'
+        - week 7: 'Algorithms Lab/exercises/w07.md'
+        - week 8: 'Algorithms Lab/exercises/w08.md'
       - Problems of the week: 'Algorithms Lab/pows/pows.md'
   - Notes:
     - Flutter:
@@ -51,4 +58,9 @@ nav:
       - Xylophone - Using Flutter and Dart Packages: 'notes/flutter/09_xylophone.md'
       - Quizzler - Modularising & Organizing Flutter Code: 'notes/flutter/10_quizzler.md'
       - BMI Calculator - Building Flutter UIs for Intermediates: 'notes/flutter/12_bmi.md'
+      - Clima - Powering Your Flutter App with Live Weather Web Data: 'notes/flutter/13_clima.md'
+      - Bitcoin Ticker: 'notes/flutter/14_bitcoin.md'
+      - Chat App w. Firebase: 'notes/flutter/15_chat.md'
+      - Todoey - State Management: 'notes/flutter/16_todoey.md'
+
   # - Home: /docs/index.md
