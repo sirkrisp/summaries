@@ -1,0 +1,1786 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.2">
+    
+    
+      
+        <title>Lectures - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.1118c9be.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ba0d045b.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../css/custom-elements.css">
+    
+      <link rel="stylesheet" href="../../../css/material-colors.css">
+    
+      <link rel="stylesheet" href="../../../css/material-shadows.css">
+    
+      <link rel="stylesheet" href="../../../css/material-components.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#advanced-systems-lab-lectures" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lectures
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Summaries
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Summaries" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Summaries
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" data-md-state="indeterminate" type="checkbox" id="__nav_3_1" checked>
+      
+      <label class="md-nav__link" for="__nav_3_1">
+        Software Design
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Software Design" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Software Design
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../software%20design/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../software%20design/factory/" class="md-nav__link">
+        Factory
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" data-md-state="indeterminate" type="checkbox" id="__nav_3_2" checked>
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        Algorithms Lab
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Algorithms Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Algorithms Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Algorithms%20Lab/prefix_sum_and_precomputation/" class="md-nav__link">
+        Prefix Sum and Precomputation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Algorithms%20Lab/sliding_window/" class="md-nav__link">
+        Sliding Window
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Algorithms%20Lab/dynamic_programming/" class="md-nav__link">
+        Dynamic Programming
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Algorithms%20Lab/numbers_and_computation/" class="md-nav__link">
+        Numbers: Representation and Computation (CGAL)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Algorithms%20Lab/geometric_computing/" class="md-nav__link">
+        Geometric Computing
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Algorithms%20Lab/boost_graph_library/" class="md-nav__link">
+        Boost Graph Library
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Algorithms%20Lab/greedy/" class="md-nav__link">
+        Greedy Algorithms
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Algorithms%20Lab/proximity_structures/" class="md-nav__link">
+        Proximity Structures
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_9" data-md-state="indeterminate" type="checkbox" id="__nav_3_2_9" checked>
+      
+      <label class="md-nav__link" for="__nav_3_2_9">
+        Exercises
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Exercises" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_2_9">
+          <span class="md-nav__icon md-icon"></span>
+          Exercises
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Algorithms%20Lab/exercises/w01/" class="md-nav__link">
+        week 1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Algorithms%20Lab/exercises/w02/" class="md-nav__link">
+        week 2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Algorithms%20Lab/exercises/w03/" class="md-nav__link">
+        week 3
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Algorithms%20Lab/exercises/w04/" class="md-nav__link">
+        week 4
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Algorithms%20Lab/exercises/w05/" class="md-nav__link">
+        week 5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Algorithms%20Lab/exercises/w07/" class="md-nav__link">
+        week 7
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Algorithms%20Lab/exercises/w08/" class="md-nav__link">
+        week 8
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Algorithms%20Lab/pows/pows/" class="md-nav__link">
+        Problems of the week
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        Advanced Systems Lab
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Advanced Systems Lab" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Advanced Systems Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Lectures
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Lectures
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-2-performance-cost-analysis" class="md-nav__link">
+    Lecture 2 - Performance Cost Analysis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-3-architecture-microarchitecture-and-intel-core" class="md-nav__link">
+    Lecture 3 - Architecture/ Microarchitecture and Intel Core
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 3 - Architecture/ Microarchitecture and Intel Core">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    Architecture
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isa-simd-vector-extensions" class="md-nav__link">
+    ISA SIMD Vector extensions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fma-fused-multiply-add" class="md-nav__link">
+    FMA = Fused Multiply-Add
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microarchitecture" class="md-nav__link">
+    Microarchitecture
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runtime-lower-bounds-cycles" class="md-nav__link">
+    Runtime Lower Bounds (Cycles)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operational-intensity" class="md-nav__link">
+    Operational Intensity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memorycompute-bound" class="md-nav__link">
+    Memory/Compute Bound
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#superscalar-computer" class="md-nav__link">
+    Superscalar Computer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-of-execution-units-to-ports" class="md-nav__link">
+    Mapping of execution units to ports
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-4-optimizing-for-instruction-level-parallelism" class="md-nav__link">
+    Lecture 4 - Optimizing for Instruction-Level Parallelism
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 4 - Optimizing for Instruction-Level Parallelism">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-get-op-cycle-close-to-throughput" class="md-nav__link">
+    How to get OP / cycle close to throughput?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#naive-approach" class="md-nav__link">
+    Naive Approach
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#with-k-accumulators" class="md-nav__link">
+    With K Accumulators
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-5-compiler-optimizations" class="md-nav__link">
+    Lecture 5 - Compiler Optimizations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-6-simd-extensions-avx-vectorization" class="md-nav__link">
+    Lecture 6 - SIMD extensions, AVX, vectorization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lexture-7-simd-extensions-avx-vectorization-contd" class="md-nav__link">
+    Lexture 7 - SIMD extensions, AVX, vectorization cont'd
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-8-memory-hierarchy-locality-caches" class="md-nav__link">
+    Lecture 8 - Memory hierarchy, locality, caches
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 8 - Memory hierarchy, locality, caches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#processor-memory-bottleneck" class="md-nav__link">
+    Processor-memory bottleneck
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#locality" class="md-nav__link">
+    Locality
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#policies-of-cache" class="md-nav__link">
+    Policies of Cache
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-cache-misses" class="md-nav__link">
+    Types of Cache Misses
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cache-structure" class="md-nav__link">
+    Cache structure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cache-performance-metrics" class="md-nav__link">
+    Cache performance metrics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#writes" class="md-nav__link">
+    Writes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-9-memory-hierarchy-locality-caches-contd" class="md-nav__link">
+    Lecture 9 - Memory hierarchy, locality, caches cont'd
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-11-roofline-model" class="md-nav__link">
+    Lecture 11 - Roofline model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dense-linear-algebra-lapackblas-atlas-fast-mmm" class="md-nav__link">
+    Dense linear algebra, LAPACK/BLAS, ATLAS, fast MMM
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense linear algebra, LAPACK/BLAS, ATLAS, fast MMM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blocking-for-registers" class="md-nav__link">
+    Blocking for Registers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtual-memory-system" class="md-nav__link">
+    Virtual Memory System
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparse-linear-algebra" class="md-nav__link">
+    Sparse Linear algebra
+  </a>
+  
+    <nav class="md-nav" aria-label="Sparse Linear algebra">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sparse-mvm" class="md-nav__link">
+    Sparse MVM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#block-mvm" class="md-nav__link">
+    Block MVM
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discrete-fourier-transform-fast-fourier-transform" class="md-nav__link">
+    Discrete Fourier transform, fast Fourier transform
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project/" class="md-nav__link">
+        Project (t-SNE)
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+      
+      <label class="md-nav__link" for="__nav_5">
+        Optimization for Data Science
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Optimization for Data Science" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Optimization for Data Science
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ODS/ods/" class="md-nav__link">
+        Lectures
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ODS/ex1/" class="md-nav__link">
+        Exercise Set 1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ODS/ex2/" class="md-nav__link">
+        Exercise Set 2
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" data-md-state="indeterminate" type="checkbox" id="__nav_6" checked>
+      
+      <label class="md-nav__link" for="__nav_6">
+        Soft Bio-hybrid Robotics
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Soft Bio-hybrid Robotics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Soft Bio-hybrid Robotics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SBRC/sbrc/" class="md-nav__link">
+        Lectures
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" data-md-state="indeterminate" type="checkbox" id="__nav_7" checked>
+      
+      <label class="md-nav__link" for="__nav_7">
+        Notes
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_1" data-md-state="indeterminate" type="checkbox" id="__nav_7_1" checked>
+      
+      <label class="md-nav__link" for="__nav_7_1">
+        Flutter
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Flutter" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_1">
+          <span class="md-nav__icon md-icon"></span>
+          Flutter
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/flutter/02_setup/" class="md-nav__link">
+        Setup
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/flutter/03_app_from_scratch/" class="md-nav__link">
+        I am rich
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/flutter/06_MiCard/" class="md-nav__link">
+        MiCard
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/flutter/07_dicee/" class="md-nav__link">
+        Dicee - Building Apps with State
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/flutter/09_xylophone/" class="md-nav__link">
+        Xylophone - Using Flutter and Dart Packages
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/flutter/10_quizzler/" class="md-nav__link">
+        Quizzler - Modularising & Organizing Flutter Code
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/flutter/12_bmi/" class="md-nav__link">
+        BMI Calculator - Building Flutter UIs for Intermediates
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/flutter/13_clima/" class="md-nav__link">
+        Clima - Powering Your Flutter App with Live Weather Web Data
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/flutter/14_bitcoin/" class="md-nav__link">
+        Bitcoin Ticker
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/flutter/15_chat/" class="md-nav__link">
+        Chat App w. Firebase
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../notes/flutter/16_todoey/" class="md-nav__link">
+        Todoey - State Management
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-2-performance-cost-analysis" class="md-nav__link">
+    Lecture 2 - Performance Cost Analysis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-3-architecture-microarchitecture-and-intel-core" class="md-nav__link">
+    Lecture 3 - Architecture/ Microarchitecture and Intel Core
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 3 - Architecture/ Microarchitecture and Intel Core">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    Architecture
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isa-simd-vector-extensions" class="md-nav__link">
+    ISA SIMD Vector extensions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fma-fused-multiply-add" class="md-nav__link">
+    FMA = Fused Multiply-Add
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microarchitecture" class="md-nav__link">
+    Microarchitecture
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runtime-lower-bounds-cycles" class="md-nav__link">
+    Runtime Lower Bounds (Cycles)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operational-intensity" class="md-nav__link">
+    Operational Intensity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memorycompute-bound" class="md-nav__link">
+    Memory/Compute Bound
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#superscalar-computer" class="md-nav__link">
+    Superscalar Computer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-of-execution-units-to-ports" class="md-nav__link">
+    Mapping of execution units to ports
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-4-optimizing-for-instruction-level-parallelism" class="md-nav__link">
+    Lecture 4 - Optimizing for Instruction-Level Parallelism
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 4 - Optimizing for Instruction-Level Parallelism">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-get-op-cycle-close-to-throughput" class="md-nav__link">
+    How to get OP / cycle close to throughput?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#naive-approach" class="md-nav__link">
+    Naive Approach
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#with-k-accumulators" class="md-nav__link">
+    With K Accumulators
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-5-compiler-optimizations" class="md-nav__link">
+    Lecture 5 - Compiler Optimizations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-6-simd-extensions-avx-vectorization" class="md-nav__link">
+    Lecture 6 - SIMD extensions, AVX, vectorization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lexture-7-simd-extensions-avx-vectorization-contd" class="md-nav__link">
+    Lexture 7 - SIMD extensions, AVX, vectorization cont'd
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-8-memory-hierarchy-locality-caches" class="md-nav__link">
+    Lecture 8 - Memory hierarchy, locality, caches
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 8 - Memory hierarchy, locality, caches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#processor-memory-bottleneck" class="md-nav__link">
+    Processor-memory bottleneck
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#locality" class="md-nav__link">
+    Locality
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#policies-of-cache" class="md-nav__link">
+    Policies of Cache
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-cache-misses" class="md-nav__link">
+    Types of Cache Misses
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cache-structure" class="md-nav__link">
+    Cache structure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cache-performance-metrics" class="md-nav__link">
+    Cache performance metrics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#writes" class="md-nav__link">
+    Writes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-9-memory-hierarchy-locality-caches-contd" class="md-nav__link">
+    Lecture 9 - Memory hierarchy, locality, caches cont'd
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-11-roofline-model" class="md-nav__link">
+    Lecture 11 - Roofline model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dense-linear-algebra-lapackblas-atlas-fast-mmm" class="md-nav__link">
+    Dense linear algebra, LAPACK/BLAS, ATLAS, fast MMM
+  </a>
+  
+    <nav class="md-nav" aria-label="Dense linear algebra, LAPACK/BLAS, ATLAS, fast MMM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blocking-for-registers" class="md-nav__link">
+    Blocking for Registers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtual-memory-system" class="md-nav__link">
+    Virtual Memory System
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparse-linear-algebra" class="md-nav__link">
+    Sparse Linear algebra
+  </a>
+  
+    <nav class="md-nav" aria-label="Sparse Linear algebra">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sparse-mvm" class="md-nav__link">
+    Sparse MVM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#block-mvm" class="md-nav__link">
+    Block MVM
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discrete-fourier-transform-fast-fourier-transform" class="md-nav__link">
+    Discrete Fourier transform, fast Fourier transform
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="advanced-systems-lab-lectures">Advanced Systems Lab lectures</h1>
+<h2 id="lecture-2-performance-cost-analysis">Lecture 2 - Performance Cost Analysis</h2>
+<p><span class="arithmatex">\(\Theta\)</span>, <span class="arithmatex">\(\Omega\)</span> and <span class="arithmatex">\(O\)</span> describe sets and are related through:</p>
+<div class="arithmatex">\[\Theta = \Omega \cap O\]</div>
+<p>What can be analyzed?</p>
+<ul>
+<li>Runtime</li>
+<li>Space (= memory footprint)</li>
+<li>Data movement (e.g. between cache and memory)</li>
+</ul>
+<p>Memory accesses only add a constant factor to the asymptopic runtime.</p>
+<p><strong>Goal:</strong> Exact cost of an algorithm</p>
+<p>Cost = number of relevant (e.g. adds, mults, divs) operations, <strong>only the operations that constitute the mathematical algorithm</strong>.</p>
+<p><strong>How to do</strong> cost analysis?</p>
+<ul>
+<li>Define suitable cost measure</li>
+<li>Count in algorithm or code (Recursive function -&gt; solve recurrence)</li>
+<li>Instrument Code (?)</li>
+<li>Performance Counters</li>
+</ul>
+<p><strong>Cost Analysis</strong> <em>enables</em> <strong>Performance Analysis</strong> which is <strong>bounded by machine's peak performance</strong>:</p>
+<div class="arithmatex">\[ \text{performance} = \frac{\text{cost}}{\text{runtime or cycles}}\]</div>
+<h2 id="lecture-3-architecture-microarchitecture-and-intel-core">Lecture 3 - Architecture/ Microarchitecture and Intel Core</h2>
+<h4 id="architecture">Architecture</h4>
+<p>= instruction set architecture = ISA = Part of processor design that needs to understand to write assembly code. (intstruction set specifications, registers)</p>
+<p>x86 backwards compatible to 8086 processor.</p>
+<h4 id="isa-simd-vector-extensions">ISA SIMD Vector extensions</h4>
+<ul>
+<li>Parallel computation on short integer/float vectors (length 2-8)</li>
+<li>Useful and <em>easy to build</em></li>
+</ul>
+<h4 id="fma-fused-multiply-add">FMA = Fused Multiply-Add</h4>
+<ul>
+<li>Only one rounding step <span class="arithmatex">\(\rightarrow\)</span> better accuracy</li>
+</ul>
+<h4 id="microarchitecture">Microarchitecture</h4>
+<p>= Implementation of the architecture</p>
+<ul>
+<li>ld = load, st = store</li>
+<li><strong>CISC</strong> ops (Complex instruction set computer) -&gt; decoded -&gt; <strong>RISC</strong> ops (Reduced instruction set computer)</li>
+<li>DCache = Double Cache</li>
+<li>ICache = Instruction Cache</li>
+</ul>
+<h4 id="runtime-lower-bounds-cycles">Runtime Lower Bounds (Cycles)</h4>
+<ul>
+<li>TODO why 50% peak performance when n/4</li>
+<li>In Haswell, to write a variable, the variable has to be loaded as well.</li>
+</ul>
+<h4 id="operational-intensity">Operational Intensity</h4>
+<div class="arithmatex">\[
+I(n) = \frac{W(n)}{Q(n)}
+\]</div>
+<p>where <span class="arithmatex">\(W(n)\)</span> = number of flops and <span class="arithmatex">\(Q(n)\)</span> = number of memory transfers (usually only reads) in <strong>bytes</strong>.</p>
+<h4 id="memorycompute-bound">Memory/Compute Bound</h4>
+<ul>
+<li>Compute bound = high operational density</li>
+<li>memory bound = low operational density</li>
+<li>Later: <strong>Roofline model</strong></li>
+</ul>
+<h4 id="superscalar-computer">Superscalar Computer</h4>
+<ul>
+<li>Multiple instructions per cycle</li>
+</ul>
+<h4 id="mapping-of-execution-units-to-ports">Mapping of execution units to ports</h4>
+<ul>
+<li>Instructions are pipelined (latency = number of cycles a operation takes to execute)</li>
+<li>However, we cannot issue a division every cycle (look at throughput)</li>
+<li><strong>fma can be used for add and mult</strong></li>
+</ul>
+<h2 id="lecture-4-optimizing-for-instruction-level-parallelism">Lecture 4 - Optimizing for Instruction-Level Parallelism</h2>
+<h4 id="how-to-get-op-cycle-close-to-throughput">How to get OP / cycle close to throughput?</h4>
+<p>Example: Reduce OP (OP = * or +)</p>
+<h4 id="naive-approach">Naive Approach</h4>
+<p>Time (Cycles): N * Latency</p>
+<h4 id="with-k-accumulators">With K Accumulators</h4>
+<p>Time Minimum achievable (is we get close to throughput): ceil(N / throughput) + latency - 1</p>
+<p>K = #accumulators = ceil(latency/ gap) = ceil(latency * throughput)</p>
+<p>Note: <strong>Loop unrolling factor L</strong> equals K. Loop untrolling does not help. May be needed to enable additional transformations (e.g. reassociation <a href="https://stackoverflow.com/questions/6430448/why-doesnt-gcc-optimize-aaaaaa-to-aaaaaa">Reassociation changes result for floating point OPs</a>)</p>
+<h2 id="lecture-5-compiler-optimizations">Lecture 5 - Compiler Optimizations</h2>
+<p>Pre-computations
+- TODO
+- Strength Reduction (replace mult/div with sum/diff)
+- Share Common Subexpressions (exploit arithmetic preoperties)</p>
+<ul>
+<li>Function inlining</li>
+</ul>
+<p>Optimization Blockers:
+- Procedure Calls
+- Memory Aliasing -&gt; remove -&gt; allocating register</p>
+<h2 id="lecture-6-simd-extensions-avx-vectorization">Lecture 6 - SIMD extensions, AVX, vectorization</h2>
+<p>SSE nearly obsolete - replaced by AVX
+mm = multi media
+xmm, ymm, zmm</p>
+<h2 id="lexture-7-simd-extensions-avx-vectorization-contd">Lexture 7 - SIMD extensions, AVX, vectorization cont'd</h2>
+<p><strong>AVX Intrinsics</strong></p>
+<ul>
+<li>We can use intrinsics operations to avoid memory aliasing</li>
+<li>image filters (moving average)</li>
+<li>Furier butterfly operations</li>
+</ul>
+<h2 id="lecture-8-memory-hierarchy-locality-caches">Lecture 8 - Memory hierarchy, locality, caches</h2>
+<h4 id="processor-memory-bottleneck">Processor-memory bottleneck</h4>
+<h4 id="locality">Locality</h4>
+<ul>
+<li>temporal (loops, also in code)</li>
+<li>spatial (also registers count, tranfer data in blocks 64 Byte)</li>
+</ul>
+<h4 id="policies-of-cache">Policies of Cache</h4>
+<ul>
+<li>Placement</li>
+<li>Replacement</li>
+</ul>
+<h4 id="types-of-cache-misses">Types of Cache Misses</h4>
+<ul>
+<li>Compulsory (cold): Occurs on first access to a block</li>
+<li>Capacity: Working set is larger than the cache </li>
+<li>Conflict: Cache large enough, but multiple data objects all map to the same slot</li>
+</ul>
+<h4 id="cache-structure">Cache structure</h4>
+<ul>
+<li>E = ?, B = block size, S = number of sets</li>
+</ul>
+<h4 id="cache-performance-metrics">Cache performance metrics</h4>
+<ul>
+<li>miss rate</li>
+<li>hit time</li>
+<li>miss penalty</li>
+</ul>
+<h4 id="writes">Writes</h4>
+<ul>
+<li>Write-back/ write-allocate</li>
+<li>Write-through/ no-write-allocate</li>
+</ul>
+<h2 id="lecture-9-memory-hierarchy-locality-caches-contd">Lecture 9 - Memory hierarchy, locality, caches cont'd</h2>
+<ul>
+<li>S = </li>
+<li>W = </li>
+<li>C = </li>
+</ul>
+<p>update only updates one double</p>
+<p>use blocks in Matrix-Matrix-Multiplications for locality</p>
+<p>The Killer: Two-Power Strided Working Sets
+- Occurence:
+    - Image processing</p>
+<h2 id="lecture-11-roofline-model">Lecture 11 - Roofline model</h2>
+<p>log - log plot -&gt; polynomials become lines</p>
+<p>Roofline -&gt; one takes only data movements into account and NOT data dependencies (which could still lead to tighter memory bounds)</p>
+<p>For data movement only consider the highest order time. If data is used more than once, we only give a lower bound because we neglect potential cache misses.</p>
+<p>TOOD Roofline for parallel code -&gt; FLOPS/cycle does not increase but only bandwidth??</p>
+<h2 id="dense-linear-algebra-lapackblas-atlas-fast-mmm">Dense linear algebra, LAPACK/BLAS, ATLAS, fast MMM</h2>
+<ul>
+<li>LAPACK relies on low level BLAS functions</li>
+<li>BLAS functions have to be re-implemented for each new processor</li>
+<li>ATLAS first determines various hardware parameters (such as latency) through measurements, and then performs an excessive search over a pre-defined search space of parameters needed to generate BLAS functions. In each search iteration the performance of the BLAS function is measured and used as feedback for the search direction.</li>
+<li>In 2005, model-based code generating (replace search with model)</li>
+</ul>
+<p>TODO recap some concepts</p>
+<h5 id="blocking-for-registers">Blocking for Registers</h5>
+<h5 id="dependencies">Dependencies</h5>
+<ul>
+<li>Read after write (or true dependency)</li>
+<li>Write after read (or antidependency) -&gt; rename, compiler, hardware</li>
+<li>Write after write (or output dependency) -&gt; rename</li>
+</ul>
+<h5 id="virtual-memory-system">Virtual Memory System</h5>
+<h2 id="sparse-linear-algebra">Sparse Linear algebra</h2>
+<h5 id="sparse-mvm">Sparse MVM</h5>
+<ul>
+<li>CSR format -&gt; store col indices and row-start indices</li>
+<li>Poor temporal locality for x but spatial locality in all arrays</li>
+<li>Temporal locality in y</li>
+</ul>
+<h5 id="block-mvm">Block MVM</h5>
+<ul>
+<li>BCSR format -&gt; store all blocks that are not completely zero</li>
+<li>More memory, less indices, temporal locality in x</li>
+<li>Block sizes hard to predict</li>
+</ul>
+<p>TODO recap model</p>
+<h2 id="discrete-fourier-transform-fast-fourier-transform">Discrete Fourier transform, fast Fourier transform</h2>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../../Algorithms%20Lab/pows/pows/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Problems of the week" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Problems of the week
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../project/" class="md-footer__link md-footer__link--next" aria-label="Next: Project (t-SNE)" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Project (t-SNE)
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.expand"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.2b46852b.min.js"></script>
+      
+        <script src="../../../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
