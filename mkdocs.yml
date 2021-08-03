@@ -49,6 +49,15 @@ nav:
         - week 7: 'Algorithms Lab/exercises/w07.md'
         - week 8: 'Algorithms Lab/exercises/w08.md'
       - Problems of the week: 'Algorithms Lab/pows/pows.md'
+  - Advanced Systems Lab:
+    - Lectures: 'Sem6/ASL/asl.md'
+    - Project (t-SNE): 'Sem6/ASL/project.md'
+  - Optimization for Data Science:
+    - Lectures: 'Sem6/ODS/ods.md'
+    - Exercise Set 1: 'Sem6/ODS/ex1.md'
+    - Exercise Set 2: 'Sem6/ODS/ex2.md'
+  - Soft Bio-hybrid Robotics:
+    - Lectures: 'Sem6/SBRC/sbrc.md'
   - Notes:
     - Flutter:
       - Setup: 'notes/flutter/02_setup.md'
