@@ -1,3 +1,7 @@
+<script src="https://app.qanda.link/ext/qandaWebWidget/qandaWebWidget.0.0.6" async></script>
+<link rel="stylesheet" href="https://app.qanda.link/ext/qandaWebWidget/qandaWebWidget.0.0.2"></link>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
+
 # Welcome to MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
