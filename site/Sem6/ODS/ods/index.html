@@ -1,0 +1,2506 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
+    
+    
+      
+        <title>Lectures - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.73f7c429.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../css/custom-elements.css">
+    
+      <link rel="stylesheet" href="../../../css/material-colors.css">
+    
+      <link rel="stylesheet" href="../../../css/material-shadows.css">
+    
+      <link rel="stylesheet" href="../../../css/material-components.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#optimization-for-data-science-lectures" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../../.." title="My Docs" class="md-header-nav__button md-logo" aria-label="My Docs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Lectures
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="../../.." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../about/" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" data-md-state="indeterminate" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Summaries
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Summaries" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Summaries
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" data-md-state="indeterminate" type="checkbox" id="nav-3-1" checked>
+    
+    <label class="md-nav__link" for="nav-3-1">
+      Software Design
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Software Design" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        <span class="md-nav__icon md-icon"></span>
+        Software Design
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../software%20design/overview/" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../software%20design/factory/" class="md-nav__link">
+      Factory
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" data-md-state="indeterminate" type="checkbox" id="nav-3-2" checked>
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Algorithms Lab
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Algorithms Lab" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        <span class="md-nav__icon md-icon"></span>
+        Algorithms Lab
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../Algorithms%20Lab/prefix_sum_and_precomputation/" class="md-nav__link">
+      Prefix Sum and Precomputation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../Algorithms%20Lab/sliding_window/" class="md-nav__link">
+      Sliding Window
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../Algorithms%20Lab/dynamic_programming/" class="md-nav__link">
+      Dynamic Programming
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../Algorithms%20Lab/numbers_and_computation/" class="md-nav__link">
+      Numbers: Representation and Computation (CGAL)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../Algorithms%20Lab/geometric_computing/" class="md-nav__link">
+      Geometric Computing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../Algorithms%20Lab/boost_graph_library/" class="md-nav__link">
+      Boost Graph Library
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../Algorithms%20Lab/greedy/" class="md-nav__link">
+      Greedy Algorithms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../Algorithms%20Lab/proximity_structures/" class="md-nav__link">
+      Proximity Structures
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2-9" data-md-state="indeterminate" type="checkbox" id="nav-3-2-9" checked>
+    
+    <label class="md-nav__link" for="nav-3-2-9">
+      Exercises
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Exercises" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-2-9">
+        <span class="md-nav__icon md-icon"></span>
+        Exercises
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../Algorithms%20Lab/exercises/w01/" class="md-nav__link">
+      week 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../Algorithms%20Lab/exercises/w02/" class="md-nav__link">
+      week 2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../Algorithms%20Lab/exercises/w03/" class="md-nav__link">
+      week 3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../Algorithms%20Lab/exercises/w04/" class="md-nav__link">
+      week 4
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../Algorithms%20Lab/exercises/w05/" class="md-nav__link">
+      week 5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../Algorithms%20Lab/exercises/w07/" class="md-nav__link">
+      week 7
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../Algorithms%20Lab/exercises/w08/" class="md-nav__link">
+      week 8
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../Algorithms%20Lab/pows/pows/" class="md-nav__link">
+      Problems of the week
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" data-md-state="indeterminate" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Advanced Systems Lab
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Advanced Systems Lab" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Advanced Systems Lab
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../ASL/asl/" class="md-nav__link">
+      Lectures
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../ASL/project/" class="md-nav__link">
+      Project (t-SNE)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  
+
+
+  
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      Optimization for Data Science
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Optimization for Data Science" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        Optimization for Data Science
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Lectures
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Lectures
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#w1-lecture-1" class="md-nav__link">
+    W1 Lecture 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w1-lecture-2" class="md-nav__link">
+    W1 Lecture 2
+  </a>
+  
+    <nav class="md-nav" aria-label="W1 Lecture 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-convex-function-that-is-discontinuous" class="md-nav__link">
+    Example: Convex function that is discontinuous.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#differentiable-function" class="md-nav__link">
+    Differentiable Function
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1st-order-characterization-of-convexity" class="md-nav__link">
+    1st order characterization of convexity:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2nd-order-characterization-of-convexity" class="md-nav__link">
+    2nd order characterization of convexity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operation-that-preserve-convexity" class="md-nav__link">
+    Operation that preserve Convexity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#properties-of-convex-functions" class="md-nav__link">
+    Properties of convex functions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strictly-convex-functions" class="md-nav__link">
+    Strictly convex functions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constrained-minimaztion" class="md-nav__link">
+    Constrained minimaztion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#existence-of-a-minimizer" class="md-nav__link">
+    Existence of a minimizer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w2-lecture-3-gradient-descent" class="md-nav__link">
+    W2 Lecture 3 - Gradient Descent
+  </a>
+  
+    <nav class="md-nav" aria-label="W2 Lecture 3 - Gradient Descent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#idea" class="md-nav__link">
+    Idea
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-algorithm" class="md-nav__link">
+    The Algorithm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vanilla-analysis" class="md-nav__link">
+    Vanilla Analysis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smooth-functions" class="md-nav__link">
+    Smooth Functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w2-lecture-4-gradient-descent-contd" class="md-nav__link">
+    W2 Lecture 4 - Gradient Descent cont'd
+  </a>
+  
+    <nav class="md-nav" aria-label="W2 Lecture 4 - Gradient Descent cont'd">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#smooth-functions-contd" class="md-nav__link">
+    Smooth Functions cont'd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sufficient-decrease" class="md-nav__link">
+    Sufficient decrease
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theorem" class="md-nav__link">
+    Theorem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nesterovs-accelerated-gradient-descent" class="md-nav__link">
+    Nesterov's accelerated gradient descent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strongly-convex-functions" class="md-nav__link">
+    Strongly Convex Functions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theorem-212-smooth-and-strongly-convex-functions-ologfrac1epsilon-steps" class="md-nav__link">
+    Theorem 2.12 - Smooth and strongly convex functions: \(O(\log{\frac{1}{\epsilon}})\) steps
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w3-lecture-5-nonsmooth-optimization" class="md-nav__link">
+    W3 Lecture 5 - Nonsmooth Optimization
+  </a>
+  
+    <nav class="md-nav" aria-label="W3 Lecture 5 - Nonsmooth Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subgradients" class="md-nav__link">
+    Subgradients
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyperplane-seperation-theorem" class="md-nav__link">
+    Hyperplane seperation theorem
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w3-lecture-6-nonsmooth-optimization-contd" class="md-nav__link">
+    W3 Lecture 6 - Nonsmooth Optimization cont'd
+  </a>
+  
+    <nav class="md-nav" aria-label="W3 Lecture 6 - Nonsmooth Optimization cont'd">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descent-directions" class="md-nav__link">
+    Descent Directions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subgradient-descent" class="md-nav__link">
+    Subgradient descent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choices-for-step-size" class="md-nav__link">
+    Choices for step size
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-descent-lemma" class="md-nav__link">
+    Basic "Descent" Lemma
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#main-theorem-on-convergence" class="md-nav__link">
+    Main Theorem on Convergence
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convergence-rate-fro-convex-lipschitz-problem" class="md-nav__link">
+    Convergence Rate fro Convex Lipschitz Problem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convergence-for-strongly-convex-lipschitz-case" class="md-nav__link">
+    Convergence for Strongly Convex Lipschitz case
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lower-bound" class="md-nav__link">
+    Lower bound
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w4-lecture-7-8-nonsmooth-and-composite-optimization" class="md-nav__link">
+    W4 Lecture 7 &amp; 8 - Nonsmooth and Composite Optimization
+  </a>
+  
+    <nav class="md-nav" aria-label="W4 Lecture 7 &amp; 8 - Nonsmooth and Composite Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#norms" class="md-nav__link">
+    Norms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bregmann-divergence" class="md-nav__link">
+    Bregmann Divergence
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mirror-descent" class="md-nav__link">
+    Mirror descent
+  </a>
+  
+    <nav class="md-nav" aria-label="Mirror descent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#convergence-of-mirror-descent" class="md-nav__link">
+    Convergence of mirror descent
+  </a>
+  
+    <nav class="md-nav" aria-label="Convergence of mirror descent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proof" class="md-nav__link">
+    Proof
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convex-composite-optimization" class="md-nav__link">
+    Convex Composite Optimization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proximal-operator" class="md-nav__link">
+    Proximal operator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proximal-gradient-method" class="md-nav__link">
+    Proximal Gradient Method
+  </a>
+  
+    <nav class="md-nav" aria-label="Proximal Gradient Method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interpretations" class="md-nav__link">
+    Interpretations
+  </a>
+  
+    <nav class="md-nav" aria-label="Interpretations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interpretation-1" class="md-nav__link">
+    Interpretation 1
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-5-stochastic-optimization" class="md-nav__link">
+    Lecture 5 - Stochastic Optimization
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 5 - Stochastic Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stochastic-gradient-descent" class="md-nav__link">
+    Stochastic Gradient Descent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convergence-analysis" class="md-nav__link">
+    Convergence Analysis
+  </a>
+  
+    <nav class="md-nav" aria-label="Convergence Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#convex-case" class="md-nav__link">
+    Convex case
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strongly-convex-case" class="md-nav__link">
+    Strongly convex case
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smooth-and-strongly-convex-case" class="md-nav__link">
+    Smooth and strongly convex case
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variance-reduction-techniques" class="md-nav__link">
+    Variance Reduction Techniques
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adaptive-methods" class="md-nav__link">
+    Adaptive methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-6-nonconvex-optimization" class="md-nav__link">
+    Lecture 6 - Nonconvex optimization
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 6 - Nonconvex optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gradient-descent-on-smooth-functions" class="md-nav__link">
+    Gradient descent on smooth functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Gradient descent on smooth functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-overshooting-with-gamma-frac1l" class="md-nav__link">
+    No overshooting with \(\gamma = \frac{1}{L}\)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trajectory-analysis" class="md-nav__link">
+    Trajectory analysis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#balanced-iterates" class="md-nav__link">
+    Balanced iterates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bounded-hessians-along-the-trajectory" class="md-nav__link">
+    Bounded Hessians along the trajectory
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-7-newtons-method-and-quasi-newton-methods" class="md-nav__link">
+    Lecture 7 - Newton's Method and Quasi-Newton methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 7 - Newton's Method and Quasi-Newton methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#newton-raphson-method" class="md-nav__link">
+    Newton-Raphson method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-babylonian-method" class="md-nav__link">
+    The Babylonian method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#newtons-method" class="md-nav__link">
+    Newton's method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quasi-newton-methods" class="md-nav__link">
+    Quasi Newton Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Quasi Newton Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#greenstadt" class="md-nav__link">
+    Greenstadt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#goldfarb" class="md-nav__link">
+    Goldfarb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bfgs-method" class="md-nav__link">
+    BFGS method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#l-bfgs" class="md-nav__link">
+    L-BFGS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ex1/" class="md-nav__link">
+      Exercise Set 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ex2/" class="md-nav__link">
+      Exercise Set 2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" data-md-state="indeterminate" type="checkbox" id="nav-6" checked>
+    
+    <label class="md-nav__link" for="nav-6">
+      Soft Bio-hybrid Robotics
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Soft Bio-hybrid Robotics" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon"></span>
+        Soft Bio-hybrid Robotics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../SBRC/sbrc/" class="md-nav__link">
+      Lectures
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" data-md-state="indeterminate" type="checkbox" id="nav-7" checked>
+    
+    <label class="md-nav__link" for="nav-7">
+      Notes
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Notes" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon"></span>
+        Notes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-1" data-md-state="indeterminate" type="checkbox" id="nav-7-1" checked>
+    
+    <label class="md-nav__link" for="nav-7-1">
+      Flutter
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Flutter" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-1">
+        <span class="md-nav__icon md-icon"></span>
+        Flutter
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../notes/flutter/02_setup/" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../notes/flutter/03_app_from_scratch/" class="md-nav__link">
+      I am rich
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../notes/flutter/06_MiCard/" class="md-nav__link">
+      MiCard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../notes/flutter/07_dicee/" class="md-nav__link">
+      Dicee - Building Apps with State
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../notes/flutter/09_xylophone/" class="md-nav__link">
+      Xylophone - Using Flutter and Dart Packages
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../notes/flutter/10_quizzler/" class="md-nav__link">
+      Quizzler - Modularising & Organizing Flutter Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../notes/flutter/12_bmi/" class="md-nav__link">
+      BMI Calculator - Building Flutter UIs for Intermediates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../notes/flutter/13_clima/" class="md-nav__link">
+      Clima - Powering Your Flutter App with Live Weather Web Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../notes/flutter/14_bitcoin/" class="md-nav__link">
+      Bitcoin Ticker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../notes/flutter/15_chat/" class="md-nav__link">
+      Chat App w. Firebase
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../../notes/flutter/16_todoey/" class="md-nav__link">
+      Todoey - State Management
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#w1-lecture-1" class="md-nav__link">
+    W1 Lecture 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w1-lecture-2" class="md-nav__link">
+    W1 Lecture 2
+  </a>
+  
+    <nav class="md-nav" aria-label="W1 Lecture 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-convex-function-that-is-discontinuous" class="md-nav__link">
+    Example: Convex function that is discontinuous.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#differentiable-function" class="md-nav__link">
+    Differentiable Function
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1st-order-characterization-of-convexity" class="md-nav__link">
+    1st order characterization of convexity:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2nd-order-characterization-of-convexity" class="md-nav__link">
+    2nd order characterization of convexity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operation-that-preserve-convexity" class="md-nav__link">
+    Operation that preserve Convexity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#properties-of-convex-functions" class="md-nav__link">
+    Properties of convex functions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strictly-convex-functions" class="md-nav__link">
+    Strictly convex functions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constrained-minimaztion" class="md-nav__link">
+    Constrained minimaztion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#existence-of-a-minimizer" class="md-nav__link">
+    Existence of a minimizer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w2-lecture-3-gradient-descent" class="md-nav__link">
+    W2 Lecture 3 - Gradient Descent
+  </a>
+  
+    <nav class="md-nav" aria-label="W2 Lecture 3 - Gradient Descent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#idea" class="md-nav__link">
+    Idea
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-algorithm" class="md-nav__link">
+    The Algorithm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vanilla-analysis" class="md-nav__link">
+    Vanilla Analysis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smooth-functions" class="md-nav__link">
+    Smooth Functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w2-lecture-4-gradient-descent-contd" class="md-nav__link">
+    W2 Lecture 4 - Gradient Descent cont'd
+  </a>
+  
+    <nav class="md-nav" aria-label="W2 Lecture 4 - Gradient Descent cont'd">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#smooth-functions-contd" class="md-nav__link">
+    Smooth Functions cont'd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sufficient-decrease" class="md-nav__link">
+    Sufficient decrease
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theorem" class="md-nav__link">
+    Theorem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nesterovs-accelerated-gradient-descent" class="md-nav__link">
+    Nesterov's accelerated gradient descent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strongly-convex-functions" class="md-nav__link">
+    Strongly Convex Functions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theorem-212-smooth-and-strongly-convex-functions-ologfrac1epsilon-steps" class="md-nav__link">
+    Theorem 2.12 - Smooth and strongly convex functions: \(O(\log{\frac{1}{\epsilon}})\) steps
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w3-lecture-5-nonsmooth-optimization" class="md-nav__link">
+    W3 Lecture 5 - Nonsmooth Optimization
+  </a>
+  
+    <nav class="md-nav" aria-label="W3 Lecture 5 - Nonsmooth Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subgradients" class="md-nav__link">
+    Subgradients
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyperplane-seperation-theorem" class="md-nav__link">
+    Hyperplane seperation theorem
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w3-lecture-6-nonsmooth-optimization-contd" class="md-nav__link">
+    W3 Lecture 6 - Nonsmooth Optimization cont'd
+  </a>
+  
+    <nav class="md-nav" aria-label="W3 Lecture 6 - Nonsmooth Optimization cont'd">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descent-directions" class="md-nav__link">
+    Descent Directions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subgradient-descent" class="md-nav__link">
+    Subgradient descent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choices-for-step-size" class="md-nav__link">
+    Choices for step size
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-descent-lemma" class="md-nav__link">
+    Basic "Descent" Lemma
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#main-theorem-on-convergence" class="md-nav__link">
+    Main Theorem on Convergence
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convergence-rate-fro-convex-lipschitz-problem" class="md-nav__link">
+    Convergence Rate fro Convex Lipschitz Problem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convergence-for-strongly-convex-lipschitz-case" class="md-nav__link">
+    Convergence for Strongly Convex Lipschitz case
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lower-bound" class="md-nav__link">
+    Lower bound
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w4-lecture-7-8-nonsmooth-and-composite-optimization" class="md-nav__link">
+    W4 Lecture 7 &amp; 8 - Nonsmooth and Composite Optimization
+  </a>
+  
+    <nav class="md-nav" aria-label="W4 Lecture 7 &amp; 8 - Nonsmooth and Composite Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#norms" class="md-nav__link">
+    Norms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bregmann-divergence" class="md-nav__link">
+    Bregmann Divergence
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mirror-descent" class="md-nav__link">
+    Mirror descent
+  </a>
+  
+    <nav class="md-nav" aria-label="Mirror descent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#convergence-of-mirror-descent" class="md-nav__link">
+    Convergence of mirror descent
+  </a>
+  
+    <nav class="md-nav" aria-label="Convergence of mirror descent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proof" class="md-nav__link">
+    Proof
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convex-composite-optimization" class="md-nav__link">
+    Convex Composite Optimization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proximal-operator" class="md-nav__link">
+    Proximal operator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proximal-gradient-method" class="md-nav__link">
+    Proximal Gradient Method
+  </a>
+  
+    <nav class="md-nav" aria-label="Proximal Gradient Method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interpretations" class="md-nav__link">
+    Interpretations
+  </a>
+  
+    <nav class="md-nav" aria-label="Interpretations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interpretation-1" class="md-nav__link">
+    Interpretation 1
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-5-stochastic-optimization" class="md-nav__link">
+    Lecture 5 - Stochastic Optimization
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 5 - Stochastic Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stochastic-gradient-descent" class="md-nav__link">
+    Stochastic Gradient Descent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convergence-analysis" class="md-nav__link">
+    Convergence Analysis
+  </a>
+  
+    <nav class="md-nav" aria-label="Convergence Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#convex-case" class="md-nav__link">
+    Convex case
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strongly-convex-case" class="md-nav__link">
+    Strongly convex case
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smooth-and-strongly-convex-case" class="md-nav__link">
+    Smooth and strongly convex case
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variance-reduction-techniques" class="md-nav__link">
+    Variance Reduction Techniques
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adaptive-methods" class="md-nav__link">
+    Adaptive methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-6-nonconvex-optimization" class="md-nav__link">
+    Lecture 6 - Nonconvex optimization
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 6 - Nonconvex optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gradient-descent-on-smooth-functions" class="md-nav__link">
+    Gradient descent on smooth functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Gradient descent on smooth functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-overshooting-with-gamma-frac1l" class="md-nav__link">
+    No overshooting with \(\gamma = \frac{1}{L}\)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trajectory-analysis" class="md-nav__link">
+    Trajectory analysis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#balanced-iterates" class="md-nav__link">
+    Balanced iterates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bounded-hessians-along-the-trajectory" class="md-nav__link">
+    Bounded Hessians along the trajectory
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-7-newtons-method-and-quasi-newton-methods" class="md-nav__link">
+    Lecture 7 - Newton's Method and Quasi-Newton methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture 7 - Newton's Method and Quasi-Newton methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#newton-raphson-method" class="md-nav__link">
+    Newton-Raphson method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-babylonian-method" class="md-nav__link">
+    The Babylonian method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#newtons-method" class="md-nav__link">
+    Newton's method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quasi-newton-methods" class="md-nav__link">
+    Quasi Newton Methods
+  </a>
+  
+    <nav class="md-nav" aria-label="Quasi Newton Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#greenstadt" class="md-nav__link">
+    Greenstadt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#goldfarb" class="md-nav__link">
+    Goldfarb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bfgs-method" class="md-nav__link">
+    BFGS method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#l-bfgs" class="md-nav__link">
+    L-BFGS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="optimization-for-data-science-lectures">Optimization for Data Science - Lectures</h1>
+<h2 id="w1-lecture-1">W1 Lecture 1</h2>
+<p><span class="arithmatex">\(f: dom(f) \rightarrow R\)</span> is <strong>convex</strong>, iff <span class="arithmatex">\(dom(f)\)</span> is convex and for all <span class="arithmatex">\(x, y \in dom(f)\)</span>, <span class="arithmatex">\(0 \leq \lambda \leq 1\)</span>: </p>
+<div class="arithmatex">\[f(\lambda x + (1 - \lambda)y) \leq \lambda f(x) + (1 - \lambda) f(y)\]</div>
+<p>If <span class="arithmatex">\(dom(f) \subseteq R^d\)</span> is finite and open <span class="arithmatex">\(\rightarrow\)</span> <span class="arithmatex">\(f\)</span> is <strong>continuous</strong>.</p>
+<h2 id="w1-lecture-2">W1 Lecture 2</h2>
+<h4 id="example-convex-function-that-is-discontinuous">Example: Convex function that is <em>discontinuous</em>.</h4>
+<p><span class="arithmatex">\(V\)</span> = set of univariate polynomials (countable infinite vector space). Let <span class="arithmatex">\(dom(f) = V\)</span> and define <span class="arithmatex">\(f\)</span> as follows:</p>
+<div class="arithmatex">\[f(p) = p'(0)\]</div>
+<p><strong>Proof</strong>: <span class="arithmatex">\(f\)</span> is discontinuous at <span class="arithmatex">\(0\)</span> (by means of the superior norm defined on <span class="arithmatex">\(V\)</span>).<br />
+<strong>Idea</strong>: Find sequence of polynomials that converge to <span class="arithmatex">\(0\)</span> but have a non-zero derivative at <span class="arithmatex">\(0\)</span>. For example, polynomials that approximate the sinus curve.</p>
+<h4 id="differentiable-function">Differentiable Function</h4>
+<p>A function  <span class="arithmatex">\(f\)</span> that can be locally approximated (<em>error</em> term is <em>sub-linear</em>) by an affine function <span class="arithmatex">\(l\)</span>:</p>
+<div class="arithmatex">\[l(y) = f(x) + A(y - x)\]</div>
+<p>Sub-Linearity of error term <span class="arithmatex">\(r(v)\)</span> (<span class="arithmatex">\(v = y - x\)</span>, <span class="arithmatex">\(x\)</span> constant):</p>
+<div class="arithmatex">\[ lim_{v \rightarrow 0} \frac{|r(v)|}{|v|} = 0\]</div>
+<h4 id="1st-order-characterization-of-convexity">1st order characterization of convexity:</h4>
+<p>If <span class="arithmatex">\(f\)</span> is convex and differentiable <span class="arithmatex">\(\leftrightarrow\)</span></p>
+<div class="arithmatex">\[f(x) \geq f(x) + \nabla f(x)^T (y - x)\]</div>
+<p><strong>Proof</strong>: Use <em>definition</em> and <em>differentiability</em> of a convex function and convexity of <span class="arithmatex">\(dom(f)\)</span>.</p>
+<h4 id="2nd-order-characterization-of-convexity">2nd order characterization of convexity</h4>
+<p><span class="arithmatex">\(\nabla^2 f(x) \succeq 0\)</span> is positive semidefinite.</p>
+<h4 id="operation-that-preserve-convexity">Operation that preserve Convexity</h4>
+<ul>
+<li>sum of convex functions</li>
+<li>composition with an affine function, <span class="arithmatex">\(f(Ax+b)\)</span></li>
+</ul>
+<h4 id="properties-of-convex-functions">Properties of convex functions</h4>
+<ul>
+<li><em>local minima</em> are global minima (Proof by contradiction)</li>
+<li><em>critical points</em> (<span class="arithmatex">\(x\)</span> s.t. <span class="arithmatex">\(\nabla f(x) = 0\)</span>) are global minima (<em>Gradient descent</em> tries to find those points)</li>
+</ul>
+<h4 id="strictly-convex-functions">Strictly convex functions</h4>
+<ul>
+<li>same rules as for convex functions but without equality</li>
+</ul>
+<h4 id="constrained-minimaztion">Constrained minimaztion</h4>
+<p><span class="arithmatex">\(x^* \in X\)</span>, <span class="arithmatex">\(X \in dom(f)\)</span> convex, is a minimizer of <span class="arithmatex">\(f\)</span> over <span class="arithmatex">\(X\)</span> iff</p>
+<div class="arithmatex">\[\nabla f(x^*)^T (x - x^*) \geq 0, \forall x \in X\]</div>
+<h4 id="existence-of-a-minimizer">Existence of a minimizer</h4>
+<p><strong><span class="arithmatex">\(\alpha\)</span>-sublevel set</strong> of <span class="arithmatex">\(f\)</span></p>
+<div class="arithmatex">\[f^{\leq \alpha} := \{x \in R^d: f(x) \leq \alpha\}\]</div>
+<p><strong>The Weierstrass Theorem</strong>:<br />
+If there is a nonempty and <strong>bounded</strong> sublevel set <span class="arithmatex">\(f^{\leq \alpha}\)</span> <span class="arithmatex">\(\rightarrow\)</span> <span class="arithmatex">\(f\)</span> has a <strong>global minimum</strong>. </p>
+<p><strong>Proof</strong>: Continuous functions attain a minimum in a compact set.</p>
+<p><strong>Weekly coercive functions</strong></p>
+<h2 id="w2-lecture-3-gradient-descent">W2 Lecture 3 - Gradient Descent</h2>
+<h4 id="idea">Idea</h4>
+<p>Suppose there is a global minimum at <span class="arithmatex">\(x^*\)</span>. Find <span class="arithmatex">\(x\)</span> s.t.</p>
+<div class="arithmatex">\[
+f(x) - f(x^*) \leq \epsilon
+\]</div>
+<h4 id="the-algorithm">The Algorithm</h4>
+<div class="arithmatex">\[
+x_{t+1} := x_t + v_t
+\]</div>
+<p>How to choose <span class="arithmatex">\(v_t\)</span>?</p>
+<div class="arithmatex">\[
+\begin{aligned}
+f(x_t + v_t) &amp;\approx f(x_t) + \nabla f(x_t)^T v_t \\
+&amp;\geq f(x_t) - \nabla f(x_t)^T \nabla f(x_t) &amp;&amp; \text{Cauchy-Schwarz}
+\end{aligned}
+\]</div>
+<p>Hence, gradient descent takes the following update step with constant <strong>step-size</strong> <span class="arithmatex">\(\gamma\)</span>:
+$$
+x_{t+1} = x_t - \gamma \nabla f(x_t)
+$$</p>
+<h4 id="vanilla-analysis">Vanilla Analysis</h4>
+<p>How to bound <span class="arithmatex">\(f(x_t) - f(x^*)\)</span>?<br />
+<strong>Theorem 2.1:</strong></p>
+<div class="arithmatex">\[
+\gamma = \frac{R}{B\sqrt{T}}
+\]</div>
+<div class="arithmatex">\[
+\frac{1}{T} \sum_{t=0}^{T-1}{(f(x_t) - f(x^*))} \leq \frac{RB}{\sqrt{T}}
+\]</div>
+<div class="arithmatex">\[
+T \geq \frac{R^2B^2}{\epsilon^2} \rightarrow \frac{RB}{\sqrt{T}} \leq \epsilon
+\]</div>
+<ul>
+<li>dimension independent (but constants could depend on dimension)</li>
+<li>holds for average and best iterate</li>
+</ul>
+<h4 id="smooth-functions">Smooth Functions</h4>
+<div class="arithmatex">\[
+f(y) \leq f(x) + \nabla f(x)^T (y - x) + \frac{L}{2} ||x-y||^2
+\]</div>
+<ul>
+<li>Not confused with infinitely often differentiable</li>
+</ul>
+<h2 id="w2-lecture-4-gradient-descent-contd">W2 Lecture 4 - Gradient Descent cont'd</h2>
+<h4 id="smooth-functions-contd">Smooth Functions cont'd</h4>
+<p>Trick:</p>
+<div class="arithmatex">\[
+y^2 = x^2 + 2x(y - x) + (x - y)^2
+\]</div>
+<p><strong>Operations the preserve smoothness:</strong> Summation and composition with an affine function.</p>
+<ul>
+<li>f smooth <span class="arithmatex">\(\leftrightarrow\)</span> Lipschitz continuity of <span class="arithmatex">\(\nabla f\)</span></li>
+</ul>
+<h4 id="sufficient-decrease">Sufficient decrease</h4>
+<p>If <span class="arithmatex">\(f\)</span> is <strong>smooth</strong> on the line segment connecting <span class="arithmatex">\(x_{t+1}\)</span> and <span class="arithmatex">\(x_t\)</span>
+$$
+\gamma = \frac{1}{L}
+$$
+$$
+f(x_{t+1}) \leq f(x_t) - \frac{1}{2L} ||\nabla f(x_t)||^2
+$$</p>
+<p><strong>Proof:</strong> Use smoothness and plug-in definition of gradient-descent</p>
+<h4 id="theorem">Theorem</h4>
+<p>If <span class="arithmatex">\(f\)</span> is <strong>smooth</strong> and <strong>convex</strong>:</p>
+<div class="arithmatex">\[
+f(x_{T}) - f(x^*) \leq \frac{L}{2T} ||x_0 - x^*||^2
+\]</div>
+<p><strong>Proof:</strong> Use sufficient decrease and result from Vanilla Analysis</p>
+<p>TODO Last iterate is the best</p>
+<div class="arithmatex">\[
+T \geq \frac{R^2L}{2 \epsilon} \rightarrow \frac{L}{2T}R^2 \leq \epsilon
+\]</div>
+<h4 id="nesterovs-accelerated-gradient-descent">Nesterov's accelerated gradient descent</h4>
+<p>Best algorithm for smooth convex functions: <span class="arithmatex">\(O \left(\frac{1}{\sqrt{\epsilon}} \right)\)</span> steps</p>
+<p><em>Proof:</em> Based on potential functions. 3 ingredients: </p>
+<ul>
+<li>Sufficient decrease</li>
+<li>Vanilla Analysis</li>
+<li>Convexity (graph above the tangent hyperplane)</li>
+</ul>
+<h4 id="strongly-convex-functions">Strongly Convex Functions</h4>
+<p>Motivation: Supermodel <span class="arithmatex">\(f(x) = x^2\)</span> has much better (exponential) convergence than we proved for general smooth functions.</p>
+<p>Definition:
+$$
+f(x) \geq f(x) + \nabla f(x)^T (y - x) + \frac{\mu}{2} ||x - y||^2
+$$</p>
+<h4 id="theorem-212-smooth-and-strongly-convex-functions-ologfrac1epsilon-steps">Theorem 2.12 - Smooth and strongly convex functions: <span class="arithmatex">\(O(\log{\frac{1}{\epsilon}})\)</span> steps</h4>
+<p>i)</p>
+<div class="arithmatex">\[
+||x_{t+1} - x^*|| \leq \left(1 - \frac{\mu}{L} \right) ||x_t - x^*||^2
+\]</div>
+<p>ii)</p>
+<div class="arithmatex">\[
+f(x_T) - f(x^*) \leq \frac{L}{2} \left(1 - \frac{\mu}{L} \right)^T ||x_0 - x^*||^2
+\]</div>
+<p><em>Proof</em>:</p>
+<ul>
+<li>Use result from Vanilla Analysis</li>
+<li>Use stronger lower bound from strong convexity</li>
+</ul>
+<div class="arithmatex">\[
+T \geq \frac{L}{\mu} \log {\frac{R^2L}{2 \epsilon}} \rightarrow \frac{L}{2} \left(1 - \frac{\mu}{L} \right)^T R^2 \leq \epsilon
+\]</div>
+<h2 id="w3-lecture-5-nonsmooth-optimization">W3 Lecture 5 - Nonsmooth Optimization</h2>
+<p>Operations that make the function non-smooth (non-differentiable)</p>
+<ul>
+<li>Examples:<ul>
+<li>Lasso</li>
+<li>Soft Margin SVM =&gt; hinge loss non-smooth</li>
+</ul>
+</li>
+</ul>
+<h4 id="subgradients">Subgradients</h4>
+<p><span class="arithmatex">\(g\)</span> is a subgradient (non-unique) if </p>
+<div class="arithmatex">\[
+f(y) \geq f(x) + g^T (y - x)
+\]</div>
+<h4 id="hyperplane-seperation-theorem">Hyperplane seperation theorem</h4>
+<p>Convex sets that do not intersect are seperable by a hyperplane</p>
+<p>Convex and Lipschitz &lt;=&gt; bounded subgradients</p>
+<h2 id="w3-lecture-6-nonsmooth-optimization-contd">W3 Lecture 6 - Nonsmooth Optimization cont'd</h2>
+<h4 id="descent-directions">Descent Directions</h4>
+<p>TODO</p>
+<h4 id="subgradient-descent">Subgradient descent</h4>
+<p>$$
+x_{t+1} = \Pi_X(x_t - \gamma_t g_t),
+$$
+where <span class="arithmatex">\(g_t \in \partial f\)</span></p>
+<h4 id="choices-for-step-size">Choices for step size</h4>
+<ul>
+<li>constant</li>
+<li>Scaled (divide through subgradient norm)</li>
+<li>Non-summable but diminishing stepsize</li>
+<li>Square summable stepsize <span class="arithmatex">\(\gamma = 1 / t\)</span></li>
+<li>Polyak's stepsize <span class="arithmatex">\(\gamma_t = \frac{f(x_t) - f(x^*)}{||g_t||_2^2}\)</span></li>
+</ul>
+<h4 id="basic-descent-lemma">Basic "Descent" Lemma</h4>
+<div class="arithmatex">\[
+||x_{t+1} - x^*||_2^2 \leq ||x_{t} - x^*||_2^2 - 2 \gamma_t (f(x_t) - f(x^*)) + \gamma_t^2 ||g_t||_2^2
+\]</div>
+<h4 id="main-theorem-on-convergence">Main Theorem on Convergence</h4>
+<p>If <span class="arithmatex">\(f\)</span> is convex:</p>
+<p>$$
+\min_{1 \leq t \leq T} f(x_t) - f^<em> \leq \frac{||x_1 - x^</em>||<em t="1">2^2 + \sum</em>^T {\gamma_t^2 ||g_t||<em t="1">2^2}}{2 \sum</em>^T \gamma_t}
+$$
+and
+$$
+f(\hat{x}<em t="1">t) - f^<em> \leq \frac{||x_1 - x^</em>||_2^2 + \sum</em>^T {\gamma_t^2 ||g_t||<em t="1">2^2}}{2 \sum</em>^T \gamma_t},
+$$
+where <span class="arithmatex">\(\hat{x}_t = \frac{\sum_{t=1}^T \gamma_t x_t}{\sum_{t=1}^T \gamma_t}\)</span>.</p>
+<h4 id="convergence-rate-fro-convex-lipschitz-problem">Convergence Rate fro Convex Lipschitz Problem</h4>
+<h4 id="convergence-for-strongly-convex-lipschitz-case">Convergence for Strongly Convex Lipschitz case</h4>
+<h3 id="lower-bound">Lower bound</h3>
+<h2 id="w4-lecture-7-8-nonsmooth-and-composite-optimization">W4 Lecture 7 &amp; 8 - Nonsmooth and Composite Optimization</h2>
+<p>Motivation: Try to exploit:
+- non-Euclidean geometry -&gt; Mirror descent
+- structure of <span class="arithmatex">\(f\)</span> -&gt; Proximal algorithms</p>
+<h4 id="norms">Norms</h4>
+<h4 id="bregmann-divergence">Bregmann Divergence</h4>
+<ul>
+<li>mirror function</li>
+</ul>
+<h4 id="mirror-descent">Mirror descent</h4>
+<h5 id="convergence-of-mirror-descent">Convergence of mirror descent</h5>
+<p>$
+\gamma_t(f(x_t) - f^<em>) \leq V_w^t - V_w^{t+1} + \frac{\gamma_t^2}{2} ||g_t||_</em>^2,
+$
+where <span class="arithmatex">\(||.||_*\)</span> is the dual norm.</p>
+<h6 id="proof">Proof</h6>
+<p>TODO</p>
+<h4 id="convex-composite-optimization">Convex Composite Optimization</h4>
+<div class="arithmatex">\[
+\min_{x \in R^d} f(x) + g(x)
+\]</div>
+<h4 id="proximal-operator">Proximal operator</h4>
+<h4 id="proximal-gradient-method">Proximal Gradient Method</h4>
+<h5 id="interpretations">Interpretations</h5>
+<h6 id="interpretation-1">Interpretation 1</h6>
+<h2 id="lecture-5-stochastic-optimization">Lecture 5 - Stochastic Optimization</h2>
+<div class="arithmatex">\[
+\min_{x \in R^d} F(x) := E_{\xi}[f(x, \xi)]
+\]</div>
+<p>Assumptions:
+- <span class="arithmatex">\(f\)</span> convex in <span class="arithmatex">\(x\)</span> and differentiable =&gt; <span class="arithmatex">\(F(x)\)</span> is convex</p>
+<p>Similar to <strong>big-<span class="arithmatex">\(n\)</span></strong> problem (empirical risk).</p>
+<h4 id="stochastic-gradient-descent">Stochastic Gradient Descent</h4>
+<ul>
+<li>unbiased estimate</li>
+</ul>
+<h4 id="convergence-analysis">Convergence Analysis</h4>
+<h5 id="convex-case">Convex case</h5>
+<h5 id="strongly-convex-case">Strongly convex case</h5>
+<h5 id="smooth-and-strongly-convex-case">Smooth and strongly convex case</h5>
+<h4 id="variance-reduction-techniques">Variance Reduction Techniques</h4>
+<h4 id="adaptive-methods">Adaptive methods</h4>
+<h2 id="lecture-6-nonconvex-optimization">Lecture 6 - Nonconvex optimization</h2>
+<ul>
+<li>Bounded Hessians =&gt; smooth</li>
+<li>smooth =&gt; bounded hessians (over any <em>open</em> convex set)</li>
+</ul>
+<p>Say something about convergence of <span class="arithmatex">\(||\nabla f(x_t)||^2 \rightarrow 0\)</span>.</p>
+<h4 id="gradient-descent-on-smooth-functions">Gradient descent on smooth functions</h4>
+<h5 id="no-overshooting-with-gamma-frac1l">No overshooting with <span class="arithmatex">\(\gamma = \frac{1}{L}\)</span></h5>
+<h4 id="trajectory-analysis">Trajectory analysis</h4>
+<h4 id="balanced-iterates">Balanced iterates</h4>
+<h4 id="bounded-hessians-along-the-trajectory">Bounded Hessians along the trajectory</h4>
+<h2 id="lecture-7-newtons-method-and-quasi-newton-methods">Lecture 7 - Newton's Method and Quasi-Newton methods</h2>
+<h4 id="newton-raphson-method">Newton-Raphson method</h4>
+<p>Find zeros (Newton is referred to in optimization with 2nd derivatives, Newton-Raphson wants to find zeros - only involves first derivative)</p>
+<p>does not always converge</p>
+<h4 id="the-babylonian-method">The Babylonian method</h4>
+<p>Find zero of <span class="arithmatex">\(f(x) = x^2 - R\)</span></p>
+<h4 id="newtons-method">Newton's method</h4>
+<div class="arithmatex">\[x_{t+1} = x_t - \nabla^2 f(x_t)^{-1} \nabla f(x_t)\]</div>
+<p>= minimize second order taylor expansion at each step</p>
+<p>Once you're close you're there (when close to optimum, super-exponentially fast). Intuition, Hessian nearly constant close to optimum.</p>
+<h4 id="quasi-newton-methods">Quasi Newton Methods</h4>
+<p>Motivation by secant methods (replace gradient with finite difference)
+How to choose <span class="arithmatex">\(H_t\)</span>:
+$$ \nabla f(x_t) - \nabla f(x_{t-1}) = H_t (x_t - x_{t-1}), \quad H_t = H_t^T $$</p>
+<h5 id="greenstadt">Greenstadt</h5>
+<p>TODO recap derivation from lecture notes (involves Lagrange multipliers)</p>
+<h5 id="goldfarb">Goldfarb</h5>
+<p>=&gt; BFGS method</p>
+<h5 id="bfgs-method">BFGS method</h5>
+<p>M = </p>
+<h5 id="l-bfgs">L-BFGS</h5>
+<p>Normal <span class="arithmatex">\(m = 10\)</span></p>
+<p>No theoretical runtime guarantees</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../../ASL/project/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Project (t-SNE)
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../ex1/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Exercise Set 1
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/vendor.08c56446.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../..",
+          features: ['navigation.instant', 'navigation.expand'],
+          search: Object.assign({
+            worker: "../../../assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="../../../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

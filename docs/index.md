@@ -1,6 +1,10 @@
-<script src="https://app.qanda.link/ext/qandaWebWidget/qandaWebWidget.0.0.6" async></script>
-<link rel="stylesheet" href="https://app.qanda.link/ext/qandaWebWidget/qandaWebWidget.0.0.2"></link>
+<link rel="stylesheet" href="https://app.qanda.link/ext/qandaWebWidget/qandaWebWidget.0.0.2.css"><link>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
+
+<script src="https://app.qanda.link/ext/qandaWebWidget/qandaWebWidget.0.0.6.js" async>
+</script>
+
+
 
 # Welcome to MkDocs
 
